@@ -1,0 +1,38 @@
+.next-section {
+  display: flex;
+  align-items: flex-start;
+  margin: 15pc 0 9pc 0;
+
+  .right-txt {
+    width: 100%;
+    p {
+      margin: 30px 0;
+      font-size: 86%;
+      opacity: 0.8;
+      max-width: 35.7pc;
+      line-height: 2;
+    }
+  }
+  .left-txt {
+    padding: 0 50px;
+    width: 61%;
+    box-sizing: border-box;
+
+    .marker-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .marker {
+        height: 2px;
+        width: 15px;
+        display: inline-block;
+        background: #fff;
+        margin: 0 8px 0 0;
+      }
+      .txt {
+        font-size: 92%;
+        font-weight: 500;
+      }
+    }
+  }
+}

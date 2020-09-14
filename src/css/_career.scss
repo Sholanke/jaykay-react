@@ -1,0 +1,92 @@
+.career-section {
+  .cards-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 5pc 0;
+
+    .card {
+      background: #05111c;
+      padding: 35px 36px;
+      width: 100%;
+      border-radius: 10px;
+      &:not(.long-card) {
+        height: fit-content;
+        padding-bottom: 48px;
+      }
+      .work-space .sub-heading,
+      .txt {
+        font-size: 81%;
+      }
+      &:nth-child(even) {
+        margin: 0 60px;
+      }
+      > .sub-heading {
+        margin-bottom: 20px;
+        font-family: "oswald";
+      }
+      .work-space {
+        .work-space-info {
+          margin: 6px 0 25px 0;
+          position: relative;
+          padding-bottom: 0;
+          &:after {
+            content: unset;
+            position: absolute;
+            top: 14px;
+            left: 7px;
+            height: 100%;
+            width: 1px;
+            background: #66bd90;
+            opacity: 0.8;
+          }
+          .txt {
+            opacity: 0.8;
+          }
+          .role,
+          .date {
+            padding: 0 10px;
+            padding-left: 25px;
+          }
+          .role {
+            position: relative;
+            display: flex;
+            align-items: center;
+            .borderd-dot {
+              content: "";
+              background-image: url("../components/assets/svg/circle.svg");
+              z-index: 1;
+              height: 15px;
+              width: 15px;
+              display: block;
+              position: absolute;
+              background-color: #05111c;
+              border-radius: 100vh;
+              left: 0;
+            }
+          }
+        }
+      }
+      .work-space:first-of-type {
+        .work-space-info {
+          padding-bottom: 30px;
+          &:after {
+            content: "";
+          }
+        }
+      }
+    }
+    .long-card {
+      width: 195%;
+    }
+  }
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    a.co_theme {
+      font-weight: 500;
+      font-size: 18px;
+    }
+  }
+}
