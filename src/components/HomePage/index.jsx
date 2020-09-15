@@ -1,10 +1,9 @@
 import React from "react";
-import "../../css/home-page.css";
 import HeroSection from "./components/HeroSection";
 import ProjectsSection from "./components/ProjectsSection";
 import CareerSection from "./components/CareerSection";
-import FooterSection from "../common/Footer";
-import MessageJK from "../common/MessageJK";
+
+// import HeaderSection from "../common/Header";
 export default function Index() {
   return (
     <>
@@ -12,8 +11,6 @@ export default function Index() {
         <HeroSection />
         <ProjectsSection />
         <CareerSection />
-        <MessageJK />
-        <FooterSection />
       </div>
     </>
   );

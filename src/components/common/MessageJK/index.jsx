@@ -3,7 +3,7 @@ import JKLink from "../JKLink";
 
 export default function index() {
   return (
-    <div className="wrapper">
+    <div className="wrapper" id="contacts">
       <section class="next-section max_width" id="contact-jaykay">
         <div class="left-txt">
           <p class="marker-container">

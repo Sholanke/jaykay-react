@@ -844,4 +844,197 @@ footer .txt p {
 .hero_section_container {
   min-height: 100vh;
 }
-/*# sourceMappingURL=home-page.css.map */
+
+.about-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 80px 0;
+}
+
+.about-section p {
+  opacity: 0.8;
+}
+
+.about-section .left-section .top-image-rapper {
+  width: 73%;
+  height: 20pc;
+  position: relative;
+  margin: 0 auto;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.about-section .left-section,
+.about-section .right-section {
+  width: 47%;
+}
+
+.about-section .left-section {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 235px;
+  min-height: calc(100vh - 255px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.about-section .right-section {
+  margin: 0 auto;
+}
+
+.about-section .right-section .main-heading {
+  font-size: 250%;
+  position: relative;
+  font-weight: 500;
+  font-family: "oswald";
+}
+
+.about-section .right-section .main-heading .abstract {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: translate(-14px, -53px);
+          transform: translate(-14px, -53px);
+  z-index: -1;
+  height: 7pc;
+  -webkit-animation-name: scale;
+          animation-name: scale;
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.about-section .right-section .norm {
+  padding: 20px 0;
+}
+
+.about-section .right-section .special-link {
+  margin: 70px 0;
+}
+
+.skills-slider {
+  margin: 100px 0;
+}
+
+.skills-slider .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.skills-slider .header .indicator {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-left: 50px;
+  text-align: left;
+}
+
+.skills-slider .header .indicator:nth-child(1) {
+  margin-left: 0;
+}
+
+.skills-slider .header .txt {
+  margin: 8px 0;
+  font-size: 85%;
+  opacity: 1;
+  font-weight: 500;
+}
+
+.skills-slider .header .trk {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  height: 2px;
+  background: rgba(212, 212, 212, 0.3);
+}
+
+.skills-slider .header .trk .thumb {
+  width: 50%;
+  background: #66bd90;
+  display: inherit;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.skills-slider .skills {
+  margin: 80px auto;
+  position: relative;
+  max-width: 1108px;
+}
+
+.skills-slider .skills .skill {
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  top: 0;
+}
+
+.skills-slider .skills .skill[data-is-active="true"] {
+  opacity: 1;
+  position: relative;
+}
+
+.skills-slider .skills .skill .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  pointer-events: none;
+}
+
+.skills-slider .skills .skill .content > .img {
+  width: 100%;
+}
+
+.skills-slider .skills .skill .content > .img .content-image {
+  height: auto;
+  width: 30pc;
+  margin: 0 auto;
+  display: block;
+}
+
+.skills-slider .skills .skill .content > .txt {
+  width: 100%;
+  padding: 0 0 0 50px;
+}
+
+.skills-slider .skills .skill .content > .txt .heading {
+  font-size: 200%;
+  font-weight: 500;
+}
+
+.skills-slider .skills .skill .content > .txt p {
+  font-size: 86%;
+  line-height: 2;
+  margin: 8px 0;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,62 @@
+.top {
+  min-height: calc(100vh - 208px);
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+
+  .top-txt {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+    .med-txt {
+      font-size: 93%;
+      font-weight: 400;
+      margin-bottom: 40px;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .big_text {
+      margin: 20px 0;
+    }
+    p {
+      margin-bottom: 70px;
+      max-width: 33pc;
+      opacity: 0.8;
+      font-size: 85.6%;
+      line-height: 2;
+      max-width: 33pc;
+      a,
+      span {
+        font-size: 100%;
+      }
+    }
+    .scroll-indict {
+      font-size: 16px;
+      color: rgba(232, 233, 235, 0.5);
+      display: flex;
+      align-items: center;
+      &:after {
+        content: "";
+        width: 10px;
+        height: 1px;
+        display: block;
+        margin: 0 15px;
+        background-color: rgba(232, 233, 235, 0.5);
+      }
+    }
+    .waving-hand {
+      height: 20px;
+      margin: 0 8px;
+      display: block;
+      transition: 1s ease;
+      transform-origin: bottom right;
+    //   animation-name: wave;
+    //   animation-duration: 1s;
+    //   animation-iteration-count: infinite;
+    }
+  }
+}

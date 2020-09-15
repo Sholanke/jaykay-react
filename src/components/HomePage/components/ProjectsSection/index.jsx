@@ -1,6 +1,7 @@
 import React, { useRef, useEffect, useState } from "react";
 import JKLink from "../../../common/JKLink";
 import { AnimatedHeading, AnimatedWord } from "../../../common/MessageJK";
+import { useScrollContext } from "../../../../context/scrollContext ";
 
 export default function index() {
   return (
@@ -52,16 +53,13 @@ function AnimateStrips() {
   const stripTwo = useRef();
   const stripContainer = useRef();
   const [distanceToMove, setDistanceToMove] = useState(0);
+  const [scrollValue, setScrollValue] = useScrollContext();
 
   useEffect(() => {
-    function updateShift() {
-      let pos = stripContainer.current.getBoundingClientRect();
-      let newDistanceToMove =
-        (pos.top - (window.innerHeight - pos.bottom)) / 20;
-      setDistanceToMove(newDistanceToMove);
-    }
-    window.addEventListener("scroll", updateShift);
-  }, []);
+    let pos = stripContainer.current.getBoundingClientRect();
+    let newDistanceToMove = (pos.top - (window.innerHeight - pos.bottom)) / 20;
+    setDistanceToMove(newDistanceToMove);
+  }, [scrollValue]);
   return (
     <div className="strips" ref={stripContainer}>
       <div

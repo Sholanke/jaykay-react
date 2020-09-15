@@ -14,7 +14,7 @@ export default function DotsBg() {
           (document.documentElement.scrollHeight -
             document.documentElement.clientHeight)) *
         100;
-      setCount(-t * 20);
+      setCount((-t * 20) * .5);
     }
     window.addEventListener("scroll", updateCount);
   }, []);

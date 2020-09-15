@@ -3,6 +3,7 @@
 body {
   background: $background_color;
   min-height: 300vh;
+  padding-top: 208px;
 }
 * {
   padding: 0;
@@ -21,11 +22,16 @@ body {
   list-style: none;
   border: none;
   outline: none;
+  box-sizing: border-box;
 
   &::selection {
     background: #66bd90;
     color: #fff;
   }
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 @keyframes fill {
@@ -49,6 +55,10 @@ body {
   100% {
     width: 20%;
   }
+}
+
+a, button{
+  cursor: pointer;
 }
 
 .special-link {
@@ -116,12 +126,10 @@ body {
   font-weight: 500;
 }
 
-.page_holder {
-  position: relative;
-  z-index: 1;
-}
 .pages_container {
   transition: 0.5s ease-out;
+  position: relative;
+  z-index: 1;
 }
 .wrapper {
   padding-right: 60px;
@@ -215,7 +223,6 @@ body {
     .fake-letter {
       position: absolute;
       left: 0;
-      z-index: 1;
       color: #fff;
       transition: transform 0.3s;
       // background: #020E18;
