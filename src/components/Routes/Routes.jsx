@@ -7,6 +7,7 @@ import Header from "../common/Header";
 import MessageJK from "../common/MessageJK";
 import FooterSection from "../common/Footer";
 import notFound from "../assets/img/404.gif"
+import JKLink from "../common/JKLink";
 
 export default class Routes extends Component {
   render() {
@@ -53,6 +54,8 @@ function NotFound() {
         <div className="text">
           <h1 className="section-heading">404</h1>
           <p>How'd you even get here?</p>{" "}
+          <br/>
+          <JKLink to="/">Go Home</JKLink>
         </div>
       </div>
     </div>

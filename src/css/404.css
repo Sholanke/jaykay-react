@@ -29,4 +29,8 @@
   line-height: 1;
   margin-bottom: 40px;
 }
+
+.not_found_page .text p {
+  opacity: .8;
+}
 /*# sourceMappingURL=404.css.map */

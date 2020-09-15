@@ -3,9 +3,7 @@
   min-height: calc(100vh - 308px);
   align-items: center;
   justify-content: center;
-  .text,
-  .image {
-  }
+
   .image {
       margin-right: 40px;
     img {
@@ -19,6 +17,9 @@
       font-size: 500%;
       line-height: 1;
       margin-bottom: 40px;
+    }
+    p{
+        opacity: .8;
     }
   }
 }
