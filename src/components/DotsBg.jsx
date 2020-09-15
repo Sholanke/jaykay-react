@@ -26,6 +26,7 @@ export default function DotsBg() {
           numberofdots={numberofDots}
           useCount={() => [count, setCount]}
           id={index}
+          key={index}
         />
       ))}
     </div>

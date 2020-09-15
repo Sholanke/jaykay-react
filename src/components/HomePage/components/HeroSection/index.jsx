@@ -1,5 +1,8 @@
 import React from "react";
 import { AnimatedHeading, AnimatedWord } from "../../../common/MessageJK";
+import { NavLink } from "react-router-dom";
+import hand from "../../../assets/img/hand.png";
+import jaykay from "../../../assets/img/jk.png";
 
 export default function index() {
   return (
@@ -10,11 +13,7 @@ export default function index() {
             <div>
               <h5 class="med-txt">
                 HI THERE
-                {/* <img
-                  class="waving-hand"
-                  src="./assets/17-175473_transparent-waving-hand-emoji-png-wave-hand-png.png"
-                  alt="hand waving"
-                /> */}
+                <img class="waving-hand" src={hand} alt="hand waving" />
               </h5>
               <AnimatedHeading>
                 MEET <AnimatedWord>KAYODE</AnimatedWord>{" "}
@@ -28,10 +27,10 @@ export default function index() {
                 design.
                 <br />
                 <br />
-                Learn more
-                <a href="./about-jaykay" class="co_theme">
+                Learn more{" "}
+                <NavLink to="/about" class="co_theme">
                   about me
-                </a>{" "}
+                </NavLink>{" "}
                 or jump straight to{" "}
                 <a href="#jk-projects" class="co_theme">
                   my work
@@ -40,6 +39,10 @@ export default function index() {
               </p>
               <p class="scroll-indict">SCROLL FOR MORE</p>
             </div>
+          </div>
+
+          <div className="top-img">
+            <img src={jaykay} alt="" srcset="" />
           </div>
         </div>
       </div>

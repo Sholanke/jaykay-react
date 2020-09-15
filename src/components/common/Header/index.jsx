@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useScrollContext } from "../../../context/scrollContext ";
 import JK from "../JKLogo/JK";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
 const links = [
   {
@@ -11,10 +11,6 @@ const links = [
   {
     to: "/about",
     text: "About",
-  },
-  {
-    to: "/projects",
-    text: "Projects",
   },
 ];
 
@@ -33,7 +29,9 @@ export default function Index() {
     >
       <div className="max_width header-wrapper">
         <span className="logo">
-          <JK />
+          <NavLink to="/">
+            <JK />
+          </NavLink>
         </span>
         <div className="links_container">
           <div className="links" data-active={hamBurgerIsOpen}>
@@ -45,9 +43,15 @@ export default function Index() {
                 {text}
               </NavLink>
             ))}
-            <a href="#" style={{ transitionDelay: `${links.length * 0.1}s` }}>
+            <Link to="/" style={{ transitionDelay: `${links.length * 0.1}s` }}>
+              Projects
+            </Link>
+            <Link
+              to="/"
+              style={{ transitionDelay: `${(links.length + 1) * 0.1}s` }}
+            >
               Contacts
-            </a>
+            </Link>
           </div>
           <button onClick={() => setHamBurgerIsOpen(!hamBurgerIsOpen)}>
             <HamBuger active={hamBurgerIsOpen} />

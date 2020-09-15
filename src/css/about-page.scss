@@ -8,15 +8,6 @@
     opacity: 0.8;
   }
 
-  .left-section {
-    .top-image-rapper {
-      width: 73%;
-      height: 20pc;
-      position: relative;
-      margin: 0 auto;
-      transform: scale(0.9);
-    }
-  }
   .left-section,
   .right-section {
     width: 47%;
@@ -28,6 +19,17 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    z-index: -1;
+    .top-image-rapper {
+      img {
+        position: fixed;
+        width: 68%;
+        left: 0;
+        top: 0;
+        transform: rotateY(180deg);
+        z-index: -1;
+      }
+    }
   }
   .right-section {
     margin: 0 auto;
@@ -138,6 +140,7 @@
             width: 30pc;
             margin: 0 auto;
             display: block;
+            border-radius: 5px;
             // @include mobile() {
             //   height: 22pc;
             //   width: 100%;

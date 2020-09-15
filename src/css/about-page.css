@@ -12,15 +12,6 @@
   opacity: 0.8;
 }
 
-.about-section .left-section .top-image-rapper {
-  width: 73%;
-  height: 20pc;
-  position: relative;
-  margin: 0 auto;
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
-}
-
 .about-section .left-section,
 .about-section .right-section {
   width: 47%;
@@ -41,6 +32,17 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  z-index: -1;
+}
+
+.about-section .left-section .top-image-rapper img {
+  position: fixed;
+  width: 68%;
+  left: 0;
+  top: 0;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  z-index: -1;
 }
 
 .about-section .right-section {
@@ -173,6 +175,7 @@
   width: 30pc;
   margin: 0 auto;
   display: block;
+  border-radius: 5px;
 }
 
 .skills-slider .skills .skill .content > .txt {

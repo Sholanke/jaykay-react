@@ -1,5 +1,7 @@
 import React from "react";
 import JKLink from "../../../common/JKLink";
+import jaykay from "../../../assets/img/jk.png"
+import quote from "../../../assets/svg/quote.svg"
 
 export default function Story() {
   return (
@@ -7,11 +9,13 @@ export default function Story() {
       <div className="max_width">
         <div class="about-section">
           <div class="left-section">
-            <div class="top-image-rapper">image here</div>
+            <div class="top-image-rapper">
+              <img src={jaykay} alt="" srcset=""/>
+            </div>
           </div>
           <div class="right-section">
             <h1 class="main-heading ">
-              <img src="./assets/quote.svg" alt="" srcset="" class="abstract" />
+              <img src={quote} alt="" srcset="" class="abstract" />
               Hello World
             </h1>
             <p class="norm">

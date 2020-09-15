@@ -4,8 +4,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
 body {
   background: #020e18;
-  min-height: 300vh;
   padding-top: 208px;
+  min-height: 100vh;
 }
 
 * {
@@ -151,7 +151,7 @@ a, button {
   height: 30px;
   width: 30px;
   display: block;
-  background-image: url("../components/assets/Arrow.svg");
+  background-image: url("../components/assets/svg/Arrow.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -198,6 +198,7 @@ a, button {
 .absolute_dots_container {
   position: fixed;
   display: block;
+  z-index: -1;
   top: 0;
   left: 0;
   width: 100vw;
@@ -663,6 +664,54 @@ footer .txt p {
       flex-wrap: wrap;
 }
 
+.top .top-txt .med-txt .waving-hand {
+  height: 20px;
+  margin: 0 8px;
+  display: block;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+  /* transform: ; */
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+  /* background: red; */
+  -webkit-animation-name: wave;
+          animation-name: wave;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes wave {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  50% {
+    -webkit-transform: translate(0, 0) rotate(45deg);
+            transform: translate(0, 0) rotate(45deg);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+
+@keyframes wave {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  50% {
+    -webkit-transform: translate(0, 0) rotate(45deg);
+            transform: translate(0, 0) rotate(45deg);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+
 .top .top-txt .big_text {
   margin: 20px 0;
 }
@@ -709,6 +758,14 @@ footer .txt p {
   transition: 1s ease;
   -webkit-transform-origin: bottom right;
           transform-origin: bottom right;
+}
+
+.top .top-img img {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 68vw;
+  z-index: -1;
 }
 
 .header-container {

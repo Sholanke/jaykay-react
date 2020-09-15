@@ -2,8 +2,8 @@
 
 body {
   background: $background_color;
-  min-height: 300vh;
   padding-top: 208px;
+  min-height: 100vh;
 }
 * {
   padding: 0;
@@ -104,7 +104,7 @@ a, button{
     height: 30px;
     width: 30px;
     display: block;
-    background-image: url("../components/assets/Arrow.svg");
+    background-image: url("../components/assets/svg/Arrow.svg");
     @include bgFit();
   }
 }
@@ -143,6 +143,7 @@ a, button{
 .absolute_dots_container {
   position: fixed;
   display: block;
+  z-index: -1;
   top: 0;
   left: 0;
   width: 100vw;

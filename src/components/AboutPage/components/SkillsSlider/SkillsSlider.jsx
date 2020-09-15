@@ -1,23 +1,33 @@
 import React, { useState, useEffect, useRef } from "react";
+import productDesign from "../../../assets/img/product-design.png";
+import code from "../../../assets/img/code.png";
+import brand from "../../../assets/img/brand.jpg";
+import visualDesign from "../../../assets/img/visual-design.png";
 
 const skills = [
   {
     title: "Product Design",
+    image: productDesign,
     desc:
       "As a product designer, I develop product design strategies and concepts according to customer requirements. Working closely with stakeholders and product owners, providing insight into customer behaviour, guiding focus and planning and desigining product features.",
   },
   {
     title: "Visual Design",
+    image: visualDesign,
     desc:
       "As a brand designer, I work with the client to understand what image or mood they want to project and come up with designs to create a brand identity for their business.",
   },
   {
     title: "Brand Design",
+    image: brand,
+
     desc:
       "As a visual designer, I aim to shape and improve the user experience through considering the effects of illustrations, photography, typography, space, layouts, and color on the usability of products and on their aesthetic appeal.",
   },
   {
     title: "Frontend Development",
+    image: code,
+
     desc:
       "As a frontend developer, I produce HTML, CSS and JavaScript for a website or Web Application so that a user can see and interact with them directly.",
   },
@@ -68,7 +78,7 @@ export default function SkillsSlider() {
   );
 }
 
-function Skill({ title, id, activeSkillIndex, desc }) {
+function Skill({ title, id, activeSkillIndex, desc , image}) {
   return (
     <div
       className="skill"
@@ -76,12 +86,12 @@ function Skill({ title, id, activeSkillIndex, desc }) {
     >
       <div class="content active">
         <div class="img">
-          {/* <img
-                  src="./assets/product-design.png"
-                  alt=""
-                  srcset=""
-                  class="content-image tb-slid-up"
-                /> */}
+          <img
+            src={image}
+            alt=""
+            srcset=""
+            class="content-image tb-slid-up"
+          />
         </div>
         <div class="txt">
           <h2 class="heading">{title}</h2>
