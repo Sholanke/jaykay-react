@@ -14,9 +14,10 @@ export default function DotsBg() {
           (document.documentElement.scrollHeight -
             document.documentElement.clientHeight)) *
         100;
-      setCount((-t * 20) * .5);
+      setCount(-t * 20 * 0.5);
     }
     window.addEventListener("scroll", updateCount);
+    setLineCount((lineCount) => (window.innerWidth > 600 ? 11 : 6));
   }, []);
 
   return (
@@ -35,7 +36,7 @@ export default function DotsBg() {
 
 function LineDots({ numberofdots, useCount, id }) {
   // const winHeight = window.offsetHeight
-  const [count, setCount] = useCount();
+  const [count] = useCount();
   return (
     <div className="line_container">
       {Array.from({ length: numberofdots }).map((nd) => (

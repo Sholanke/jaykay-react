@@ -20,7 +20,7 @@ export default function index() {
                 <AnimatedWord>SHOLANKE</AnimatedWord>
               </AnimatedHeading>
               <p class="tb-slid-up">
-                I’m a product designer based in Lagos, Nigeria
+                I’m a product designer based in Lagos, Nigeria{" "}
                 <span class="small-txt">(for now)</span> with experience in
                 delivering end to end designs for digital products. From
                 ideation to execution, I make great user experiences with UI

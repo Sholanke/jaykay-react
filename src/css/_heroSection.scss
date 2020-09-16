@@ -9,6 +9,9 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    @include mobile {
+      width: unset;
+    }
 
     .med-txt {
       font-size: 93%;
@@ -23,9 +26,7 @@
         margin: 0 8px;
         display: block;
         transition: 1s ease;
-        /* transform: ; */
         transform-origin: bottom right;
-        /* background: red; */
         animation-name: wave;
         animation-duration: 1s;
         animation-iteration-count: infinite;
@@ -71,16 +72,6 @@
         background-color: rgba(232, 233, 235, 0.5);
       }
     }
-    .waving-hand {
-      height: 20px;
-      margin: 0 8px;
-      display: block;
-      transition: 1s ease;
-      transform-origin: bottom right;
-      //   animation-name: wave;
-      //   animation-duration: 1s;
-      //   animation-iteration-count: infinite;
-    }
   }
   .top-img {
     img {
@@ -90,6 +81,11 @@
       width: 68vw;
       z-index: -1;
       // height: 100vh;
+      @include mobile {
+        width: unset;
+        right: -34vmax;
+        height: 100vh;
+      }
     }
   }
 }

@@ -4,14 +4,16 @@
   position: fixed;
   top: 0;
   width: 100%;
-  padding: 4pc 60px;
+  padding-top: 4pc;
+  padding-bottom: 4pc;
   z-index: 5;
   left: 0;
   transition: 0.5s ease;
   border-bottom: 1px solid #28282800;
 
   &.shrink {
-    padding: 1pc 60px;
+    padding-top: 1pc;
+    padding-bottom: 1pc;
     background: $background_color;
     border-bottom: 1px solid #28282836;
   }
@@ -20,8 +22,6 @@
     justify-content: space-between;
     align-items: center;
 
-    .logo {
-    }
     .ham_burger {
       height: 19px;
       width: 27px;
@@ -98,6 +98,11 @@
             color: #66bd90;
           }
         }
+      }
+    }
+    .dsk_links {
+      .links {
+        display: none;
       }
     }
   }

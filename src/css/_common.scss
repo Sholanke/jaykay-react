@@ -24,6 +24,10 @@ body {
   outline: none;
   box-sizing: border-box;
 
+  @include mobile {
+    font-size: 1.1rem;
+  }
+
   &::selection {
     background: #66bd90;
     color: #fff;
@@ -57,7 +61,8 @@ html {
   }
 }
 
-a, button{
+a,
+button {
   cursor: pointer;
 }
 
@@ -118,12 +123,17 @@ a, button{
   font-weight: 500;
   line-height: 1.5;
   width: fit-content;
+  @include mobile {
+    font-size: 170%;
+  }
 }
-
 .section-heading {
   font-size: 215%;
   font-family: $oswald;
   font-weight: 500;
+  @include mobile {
+    font-size: 150%;
+  }
 }
 
 .pages_container {
@@ -134,6 +144,10 @@ a, button{
 .wrapper {
   padding-right: 60px;
   padding-left: 60px;
+  @include mobile {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
   .max_width {
     max-width: 77pc;
     margin-left: auto;
@@ -151,6 +165,9 @@ a, button{
   display: flex;
   justify-content: space-between;
   margin-left: 5%;
+  @include mobile {
+    margin-left: 10%;
+  }
   .line_container {
     width: fit-content;
     height: 100%;

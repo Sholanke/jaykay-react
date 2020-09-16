@@ -1,8 +1,11 @@
+
 .next-section {
   display: flex;
   align-items: flex-start;
   margin: 15pc 0 9pc 0;
-
+  @include mobile {
+    flex-direction: column;
+  }
   .right-txt {
     width: 100%;
     p {
@@ -17,7 +20,11 @@
     padding: 0 50px;
     width: 61%;
     box-sizing: border-box;
-
+    @include mobile {
+      width: unset;
+      padding: 0;
+      margin: 0 0 72px 0;
+    }
     .marker-container {
       display: flex;
       align-items: center;

@@ -33,7 +33,7 @@ export default function Index() {
             <JK />
           </NavLink>
         </span>
-        <div className="links_container">
+        <div className="links_container dsk_links">
           <div className="links" data-active={hamBurgerIsOpen}>
             {links.map(({ text, ...props }, index) => (
               <NavLink

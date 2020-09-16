@@ -5,3 +5,9 @@
   background-position: center;
   background-size: cover;
 }
+
+@mixin mobile {
+  @media (max-width: 600px) {
+    @content
+  }
+}

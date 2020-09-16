@@ -5,11 +5,17 @@
     align-items: center;
     justify-content: space-between;
     margin: 9pc 0 11pc 0;
+    @include mobile {
+      display: block;
+    }
     &:nth-child(even) {
       flex-direction: row-reverse;
       .text_section {
         padding-left: 0;
         padding-right: 40px;
+        @include mobile {
+          padding: 0;
+        }
       }
     }
     .image_section,
@@ -19,12 +25,19 @@
     .text_section {
       padding-left: 40px;
       max-width: 36pc;
+      @include mobile {
+        padding-left: 0;
+        transform: translate(0, -42px);
+      }
       .key_value_container {
         margin: 30px 0;
         display: flex;
         flex-wrap: wrap;
         .key_value {
           margin-right: 46px;
+          @include mobile {
+            margin: 5px 20px 5px 0;
+          }
           .key,
           & {
             font-family: $oswald;
@@ -46,12 +59,23 @@
         max-width: 73%;
         margin-right: auto;
         margin-left: auto;
+        @include mobile {
+          max-width: unset;
+        }
         .strip {
           height: 20pc;
           flex: 1;
           display: flex;
           background: #0c2124;
           margin: 0 10px;
+          @include mobile {
+            &:nth-child(2) {
+              margin-right: 0;
+            }
+            &:nth-child(1) {
+              margin-left: 0;
+            }
+          }
 
           .number {
             position: absolute;
@@ -65,7 +89,6 @@
             align-items: center;
             justify-content: center;
             line-height: 1;
-
           }
         }
       }
