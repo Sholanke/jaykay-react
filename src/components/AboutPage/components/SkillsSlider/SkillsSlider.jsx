@@ -33,6 +33,7 @@ const skills = [
   },
 ];
 
+//animation loop delay
 const delay = 12;
 
 export default function SkillsSlider() {
@@ -40,26 +41,32 @@ export default function SkillsSlider() {
   const useActiveSkillIndex = () => [activeSkillIndex, setActiveSkillIndex];
   const intervalRef = useRef();
 
-  function update(activeIndex) {
+  function next(activeIndex) {
     if (activeIndex < skills.length - 1) {
       return activeIndex + 1;
     } else {
       return 0;
     }
   }
+  function previous(activeIndex) {
+    if (activeIndex > 0) {
+      return activeIndex - 1;
+    } else {
+      return skills.length - 1;
+    }
+  }
 
   useEffect(() => {
     intervalRef.current = setInterval(() => {
-      setActiveSkillIndex(update);
+      setActiveSkillIndex(next);
     }, delay * 1000);
     return () => clearInterval(intervalRef.current);
   }, [activeSkillIndex]);
 
   return (
-    <div className="wrapper">
+    <div className="wrapper slider-section">
       <div className="max_width">
         <h1 class="co_theme section-heading">MY SKILLSETS</h1>
-        {/* {activeSkillIndex} */}
         <div className="skills-slider">
           <Header useActiveSkillIndex={useActiveSkillIndex} />
           <div className="skills">
@@ -71,6 +78,26 @@ export default function SkillsSlider() {
                 activeSkillIndex={activeSkillIndex}
               />
             ))}
+
+            <div className="ctrl-btns">
+              <button
+                className="ctrl-btn"
+                onClick={() => setActiveSkillIndex(previous)}
+              ></button>
+              <button
+                className="ctrl-btn"
+                onClick={() => setActiveSkillIndex(next)}
+              ></button>
+            </div>
+
+            <span className="mbl_indicator">
+              {Array.from({ length: skills.length }).map((x, index) => (
+                <span
+                  className="indicator"
+                  data-active={(activeSkillIndex === index).toString()}
+                ></span>
+              ))}
+            </span>
           </div>
         </div>
       </div>
@@ -78,7 +105,7 @@ export default function SkillsSlider() {
   );
 }
 
-function Skill({ title, id, activeSkillIndex, desc , image}) {
+function Skill({ title, id, activeSkillIndex, desc, image }) {
   return (
     <div
       className="skill"
@@ -86,12 +113,7 @@ function Skill({ title, id, activeSkillIndex, desc , image}) {
     >
       <div class="content active">
         <div class="img">
-          <img
-            src={image}
-            alt=""
-            srcset=""
-            class="content-image tb-slid-up"
-          />
+          <img src={image} alt="" srcset="" class="content-image tb-slid-up" />
         </div>
         <div class="txt">
           <h2 class="heading">{title}</h2>

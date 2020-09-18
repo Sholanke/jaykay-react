@@ -25,6 +25,7 @@ export default function Index() {
 
   return (
     <div
+      data-hamBurgerIsOpen={hamBurgerIsOpen}
       className={`wrapper header-container ${headerIsShrinked ? "shrink" : ""}`}
     >
       <div className="max_width header-wrapper">

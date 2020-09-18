@@ -1,4 +1,8 @@
 import React from "react";
+import twitter from "../../assets/svg/twitter.svg";
+import dribbble from "../../assets/svg/dribbble.svg";
+import behance from "../../assets/svg/behance.svg";
+import linkedIn from "../../assets/svg/linkedIn.svg";
 
 export default function index() {
   return (
@@ -6,16 +10,16 @@ export default function index() {
       <div className="max_width container">
         <div class="smedia-links">
           <a href="https://dribbble.com/iam_JayKay" target="blank">
-            <img src="./assets/Shape.svg" alt="" srcset="" />
+            <img src={dribbble} alt="" srcset="" />
           </a>
           <a href="https://twitter.com/iam_JayKay" target="blank">
-            <img src="./assets/Shape (1).svg" alt="" srcset="" />
+            <img src={twitter} alt="" srcset="" />
           </a>
           <a href="https://www.behance.net/jaykaydre" target="blank">
-            <img src="./assets/Shape (2).svg" alt="" srcset="" />
+            <img src={behance} alt="" srcset="" />
           </a>
           <a href="https://ng.linkedin.com/in/kayodesho" target="blank">
-            <img src="./assets/linkedin.svg" alt="" srcset="" />
+            <img src={linkedIn} alt="" srcset="" />
           </a>
         </div>
         <div class="txt">

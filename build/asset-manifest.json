@@ -1,31 +1,35 @@
 {
   "files": {
-    "main.css": "/static/css/main.a4e6e630.chunk.css",
-    "main.js": "/static/js/main.9712af3a.chunk.js",
-    "main.js.map": "/static/js/main.9712af3a.chunk.js.map",
+    "main.css": "/static/css/main.6af7e7fb.chunk.css",
+    "main.js": "/static/js/main.cca1c638.chunk.js",
+    "main.js.map": "/static/js/main.cca1c638.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.f0a637dc.js",
     "runtime-main.js.map": "/static/js/runtime-main.f0a637dc.js.map",
-    "static/js/2.cb252aaf.chunk.js": "/static/js/2.cb252aaf.chunk.js",
-    "static/js/2.cb252aaf.chunk.js.map": "/static/js/2.cb252aaf.chunk.js.map",
+    "static/js/2.aafca8e9.chunk.js": "/static/js/2.aafca8e9.chunk.js",
+    "static/js/2.aafca8e9.chunk.js.map": "/static/js/2.aafca8e9.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.82b6362d83ae5e27caf145f192720676.js": "/precache-manifest.82b6362d83ae5e27caf145f192720676.js",
+    "precache-manifest.e7be5687b23226279281d497832d4e9a.js": "/precache-manifest.e7be5687b23226279281d497832d4e9a.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.a4e6e630.chunk.css.map": "/static/css/main.a4e6e630.chunk.css.map",
-    "static/js/2.cb252aaf.chunk.js.LICENSE.txt": "/static/js/2.cb252aaf.chunk.js.LICENSE.txt",
+    "static/css/main.6af7e7fb.chunk.css.map": "/static/css/main.6af7e7fb.chunk.css.map",
+    "static/js/2.aafca8e9.chunk.js.LICENSE.txt": "/static/js/2.aafca8e9.chunk.js.LICENSE.txt",
     "static/media/404.gif": "/static/media/404.1cb4010b.gif",
     "static/media/home-page.css": "/static/media/circle.20ed0c75.svg",
+    "static/media/behance.svg": "/static/media/behance.1c230ca9.svg",
     "static/media/brand.jpg": "/static/media/brand.794cf14c.jpg",
     "static/media/code.png": "/static/media/code.402259e7.png",
+    "static/media/dribbble.svg": "/static/media/dribbble.bcd8f956.svg",
     "static/media/hand.png": "/static/media/hand.62633a12.png",
     "static/media/jk.png": "/static/media/jk.5cbbb59a.png",
+    "static/media/linkedIn.svg": "/static/media/linkedIn.f8babde6.svg",
     "static/media/product-design.png": "/static/media/product-design.cbe3f752.png",
     "static/media/quote.svg": "/static/media/quote.f0771551.svg",
+    "static/media/twitter.svg": "/static/media/twitter.984bc3fe.svg",
     "static/media/visual-design.png": "/static/media/visual-design.d71012c2.png"
   },
   "entrypoints": [
     "static/js/runtime-main.f0a637dc.js",
-    "static/js/2.cb252aaf.chunk.js",
-    "static/css/main.a4e6e630.chunk.css",
-    "static/js/main.9712af3a.chunk.js"
+    "static/js/2.aafca8e9.chunk.js",
+    "static/css/main.6af7e7fb.chunk.css",
+    "static/js/main.cca1c638.chunk.js"
   ]
 }

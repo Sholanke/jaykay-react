@@ -6,7 +6,7 @@ import { createHashHistory } from "history";
 import Header from "../common/Header";
 import MessageJK from "../common/MessageJK";
 import FooterSection from "../common/Footer";
-import notFound from "../assets/img/404.gif"
+import notFound from "../assets/img/404.gif";
 import JKLink from "../common/JKLink";
 
 export default class Routes extends Component {
@@ -33,7 +33,11 @@ const WithRoutes = withRouter(
           <Header />
           <Switch>
             <Route path="/" exact component={HomePage} />
-            <Route path="/about" exact component={AboutPage} />
+            <Route
+              path="/about"
+              exact
+              component={() => <AboutPage left={true} />}
+            />
             <Route component={NotFound} />
           </Switch>
           <MessageJK />
@@ -49,12 +53,11 @@ function NotFound() {
     <div className="wrapper">
       <div className="max_width not_found_page">
         <div className="image">
-          <img src={notFound} alt="" srcset=""/>
+          <img src={notFound} alt="" srcset="" />
         </div>
         <div className="text">
           <h1 className="section-heading">404</h1>
-          <p>How'd you even get here?</p>{" "}
-          <br/>
+          <p>How'd you even get here?</p> <br />
           <JKLink to="/">Go Home</JKLink>
         </div>
       </div>

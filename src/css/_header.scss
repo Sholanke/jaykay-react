@@ -16,6 +16,12 @@
     padding-bottom: 1pc;
     background: $background_color;
     border-bottom: 1px solid #28282836;
+    &[data-hamBurgerIsOpen="true"] {
+      @include mobile {
+        padding-top: 4pc;
+        padding-bottom: 4pc;
+      }
+    }
   }
   .header-wrapper {
     display: flex;
@@ -80,6 +86,27 @@
         align-items: center;
         margin-right: 40px;
         overflow: hidden;
+
+        @include mobile {
+          position: fixed;
+          top: 0;
+          left: 0;
+          height: 100%;
+          background: $background_color;
+          width: 100%;
+          padding-top: 6pc;
+          display: block;
+
+          transform: translate(0, -20px);
+          opacity: 0;
+          pointer-events: none;
+          transition: .2s ease-out;
+          &[data-active="true"] {
+            transform: translate(0, 0);
+            opacity: 1;
+            pointer-events: unset;
+          }
+        }
         &[data-active="true"] {
           a {
             transform: translate(0, 0);
@@ -94,15 +121,15 @@
           opacity: 0;
           transform: translate(0, 100%);
           transition: 0.5s ease;
+          @include mobile {
+            display: block;
+            width: fit-content;
+            margin: 40px auto;
+          }
           &:hover {
             color: #66bd90;
           }
         }
-      }
-    }
-    .dsk_links {
-      .links {
-        display: none;
       }
     }
   }
