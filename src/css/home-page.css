@@ -1039,8 +1039,8 @@ footer .txt p {
             transform: translate(0, -20px);
     opacity: 0;
     pointer-events: none;
-    -webkit-transition: .2s ease-out;
-    transition: .2s ease-out;
+    -webkit-transition: 0.2s ease-out;
+    transition: 0.2s ease-out;
   }
   .header-container .header-wrapper .links_container .links[data-active="true"] {
     -webkit-transform: translate(0, 0);
@@ -1067,6 +1067,10 @@ footer .txt p {
   transition: 0.5s ease;
 }
 
+.header-container .header-wrapper .links_container .links a.active {
+  color: #66bd90;
+}
+
 @media (max-width: 600px) {
   .header-container .header-wrapper .links_container .links a {
     display: block;
@@ -1074,6 +1078,8 @@ footer .txt p {
     width: -moz-fit-content;
     width: fit-content;
     margin: 40px auto;
+    font-weight: 500;
+    font-size: 170%;
   }
 }
 

@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { useScrollContext } from "../../../context/scrollContext ";
 import JK from "../JKLogo/JK";
 import { NavLink, Link } from "react-router-dom";
-
 const links = [
   {
     to: "/",
@@ -14,8 +13,8 @@ const links = [
   },
 ];
 
-export default function Index() {
-  const [hamBurgerIsOpen, setHamBurgerIsOpen] = useState(false);
+export default function Header({ useHamBurgerIsActive }) {
+  const [hamBurgerIsOpen, setHamBurgerIsOpen] = useHamBurgerIsActive();
   const [headerIsShrinked, setHeaderIsShrinked] = useState();
   const [scrollValue] = useScrollContext();
 
@@ -39,6 +38,7 @@ export default function Index() {
             {links.map(({ text, ...props }, index) => (
               <NavLink
                 {...props}
+                exact
                 style={{ transitionDelay: `${index * 0.1}s` }}
               >
                 {text}

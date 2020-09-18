@@ -100,7 +100,7 @@
           transform: translate(0, -20px);
           opacity: 0;
           pointer-events: none;
-          transition: .2s ease-out;
+          transition: 0.2s ease-out;
           &[data-active="true"] {
             transform: translate(0, 0);
             opacity: 1;
@@ -121,10 +121,17 @@
           opacity: 0;
           transform: translate(0, 100%);
           transition: 0.5s ease;
+
+          &.active{
+            color: $theme;
+          }
+
           @include mobile {
             display: block;
             width: fit-content;
             margin: 40px auto;
+            font-weight: 500;
+            font-size: 170%;
           }
           &:hover {
             color: #66bd90;

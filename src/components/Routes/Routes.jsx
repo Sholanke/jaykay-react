@@ -21,16 +21,25 @@ export default class Routes extends Component {
 
 const WithRoutes = withRouter(
   class WithRoutes extends Component {
+    state = {
+      hamBurgerIsActive: false,
+    };
     componentDidMount() {
       this.unlisten = this.props.history.listen((location) => {
         window.scrollTo(0, 0);
+        this.setState({ hamBurgerIsActive: false });
       });
     }
 
     render() {
       return (
         <>
-          <Header />
+          <Header
+            useHamBurgerIsActive={() => [
+              this.state.hamBurgerIsActive,
+              (bool) => this.setState({ hamBurgerIsActive: bool }),
+            ]}
+          />
           <Switch>
             <Route path="/" exact component={HomePage} />
             <Route
