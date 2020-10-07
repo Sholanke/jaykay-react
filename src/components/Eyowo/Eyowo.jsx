@@ -100,7 +100,6 @@ export default function Eyowo() {
   return (
     <div class="wrapper">
       <div class="max_width" id="main">
-        {sliderCount} {sliderShift}
         <div class="project-heading-container">
           <div class="project-info">
             <h2 class="heading big_text tb-slid-up">
