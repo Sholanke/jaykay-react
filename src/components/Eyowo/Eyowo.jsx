@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../../css/eyowo.css";
 import bannerImage from "../assets/img/eyowo-app-banner.png";
 import researchImage from "../assets/img/eyowo-research.png";
@@ -27,14 +27,80 @@ import morePc_4 from "../assets/img/ey-more-pc-4.png";
 import tweet_pri from "../assets/img/tweet-primary-1.png";
 import tweet_pri_2 from "../assets/img/tweet-primary-2.png";
 
+import tweet_1 from "../assets/img/tweet-1.png";
+import tweet_2 from "../assets/img/tweet-2.png";
+import tweet_3 from "../assets/img/tweet-3.png";
+import tweet_4 from "../assets/img/tweet-4.png";
+import tweet_5 from "../assets/img/tweet-5.png";
+import tweet_6 from "../assets/img/tweet-6.png";
+
 import liteCrowd from "../assets/img/liteCrowd_tn.png";
 
 import arm from "../assets/img/arm_tn.png";
+import { useRef } from "react";
+import { useState } from "react";
+
+const tweets = [
+  {
+    src: tweet_1,
+    alt: "tweet",
+  },
+  {
+    src: tweet_2,
+    alt: "tweet",
+  },
+  {
+    src: tweet_3,
+    alt: "tweet",
+  },
+  {
+    src: tweet_4,
+    alt: "tweet",
+  },
+  {
+    src: tweet_5,
+    alt: "tweet",
+  },
+  {
+    src: tweet_6,
+    alt: "tweet",
+  },
+];
 
 export default function Eyowo() {
+  const slider = useRef();
+  const [sliderCount, setsliderCount] = useState(0);
+  const [sliderShift, setsliderShift] = useState(0);
+  useEffect(() => {
+    const { current: sliderNode } = slider;
+    const imgNodes = Array.from(sliderNode.querySelectorAll("img"));
+
+    setInterval(() => {
+      setsliderCount((prev) => {
+        if (prev < imgNodes.length - 1) {
+          return prev + 1;
+        } else {
+          return 0;
+        }
+      });
+    }, 6000);
+  }, []);
+
+  //handle shift
+  useEffect(() => {
+    const { current: sliderNode } = slider;
+    const imgNodes = Array.from(sliderNode.querySelectorAll("img"));
+    let shift = 0;
+    for (let x = 0; x < sliderCount; x++) {
+      shift += imgNodes[x].offsetWidth + 30;
+    }
+    setsliderShift(shift);
+  }, [sliderCount]);
+
   return (
     <div class="wrapper">
       <div class="max_width" id="main">
+        {sliderCount} {sliderShift}
         <div class="project-heading-container">
           <div class="project-info">
             <h2 class="heading big_text tb-slid-up">
@@ -69,11 +135,9 @@ export default function Eyowo() {
             </div>
           </div>
         </div>
-
         <div class="project-dp-rapper tb-slid-up">
           <img src={bannerImage} alt="" class="project-dp" />
         </div>
-
         <div class="background-section">
           <div class="left">
             <h2 class="heading tb-slid-up">BACKGROUND</h2>
@@ -84,7 +148,6 @@ export default function Eyowo() {
             </p>
           </div>
         </div>
-
         <div class="challenge-solution-section">
           <div class="left">
             <h2 class="heading tb-slid-up">THE CHALLENGE</h2>
@@ -106,7 +169,6 @@ export default function Eyowo() {
             </p>
           </div>
         </div>
-
         <div class="research-section">
           <div class="txt">
             <h2 class="medium-text tb-slid-up">
@@ -130,7 +192,6 @@ export default function Eyowo() {
             <img src={researchImage} alt="" srcset="" class="tb-slid-up" />
           </div>
         </div>
-
         <div class="result-section">
           <div class="txt">
             <h2 class="medium-text tb-slid-up">
@@ -172,7 +233,6 @@ export default function Eyowo() {
             </div>
           </div>
         </div>
-
         <div class="grade-section">
           <div class="txt">
             <p class="norm tb-slid-up">
@@ -195,7 +255,6 @@ export default function Eyowo() {
             </div>
           </div>
         </div>
-
         <div class="often-section">
           <div class="txt">
             <p class="norm tb-slid-up">
@@ -209,7 +268,6 @@ export default function Eyowo() {
             </div>
           </div>
         </div>
-
         <div class="redesign-section">
           <div class="txt">
             <h2 class="medium-text tb-slid-up">The Redesign</h2>
@@ -235,7 +293,6 @@ export default function Eyowo() {
             <img src={thinkImage} alt="" srcset="" />
           </div>
         </div>
-
         <div class="prj-overview">
           <div class="txt">
             <p class="norm tb-slid-up">
@@ -328,7 +385,6 @@ export default function Eyowo() {
             <img src={app} alt="" srcset="" />
           </div>
         </div>
-
         <div class="des-for-save">
           <div class="text-container">
             <div class="text-rapper">
@@ -354,7 +410,6 @@ export default function Eyowo() {
             <img src={appFour} alt="" srcset="" class="phone tb-slid-up" />
           </div>
         </div>
-
         <div class="testimonials">
           <div class="txt">
             <h2 class="medium-text tb-slid-up">The Impact</h2>
@@ -376,99 +431,20 @@ export default function Eyowo() {
             <img src={tweet_pri_2} alt="" srcset="" />
           </div>
         </div>
-
         <div class="section-wrapper slider-container">
           <button class="mv-btn mv-btn-r js-right">
             {/* <img src="../assets/navigate_next-24px.svg" alt="" srcset="" /> */}
           </button>
-          <div class="slider js-horizontal-slider" slider-element-width="347">
-            <img
-              src="../assets/twitter-shots/Screenshot 2020-02-15 at 14.18.png"
-              alt=""
-              srcset=""
-              class="slider-element"
-            />
-            <img
-              src="../assets/twitter-shots/Screenshot 2020-02-15 at 14.23-1.png"
-              alt=""
-              srcset=""
-              class="slider-element"
-            />
-            <img
-              src="../assets/twitter-shots/Screenshot 2020-02-15 at 14.24.png"
-              alt=""
-              srcset=""
-              class="slider-element"
-            />
-            <img
-              src="../assets/twitter-shots/Screenshot 2020-02-15 at 14.25.png"
-              alt=""
-              srcset=""
-              class="slider-element"
-            />
-            <img
-              src="../assets/twitter-shots/Screenshot 2020-02-15 at 14.25-1.png"
-              alt=""
-              srcset=""
-              class="slider-element"
-            />
-            <img
-              src="../assets/twitter-shots/Screenshot 2020-02-15 at 14.25-2.png"
-              alt=""
-              srcset=""
-              class="slider-element"
-            />
-            <img
-              src="../assets/twitter-shots/Screenshot 2020-02-15 at 14.25-3.png"
-              alt=""
-              srcset=""
-              class="slider-element"
-            />
-            <img
-              src="../assets/twitter-shots/Screenshot 2020-02-15 at 14.18.png"
-              alt=""
-              srcset=""
-              class="fake-element"
-            />
-            <img
-              src="../assets/twitter-shots/Screenshot 2020-02-15 at 14.23-1.png"
-              alt=""
-              srcset=""
-              class="fake-element"
-            />
-            <img
-              src="../assets/twitter-shots/Screenshot 2020-02-15 at 14.24.png"
-              alt=""
-              srcset=""
-              class="fake-element"
-            />
-            <img
-              src="../assets/twitter-shots/Screenshot 2020-02-15 at 14.25.png"
-              alt=""
-              srcset=""
-              class="fake-element"
-            />
-            <img
-              src="../assets/twitter-shots/Screenshot 2020-02-15 at 14.25-1.png"
-              alt=""
-              srcset=""
-              class="fake-element"
-            />
-            <img
-              src="../assets/twitter-shots/Screenshot 2020-02-15 at 14.25-2.png"
-              alt=""
-              srcset=""
-              class="fake-element"
-            />
-            <img
-              src="../assets/twitter-shots/Screenshot 2020-02-15 at 14.25-3.png"
-              alt=""
-              srcset=""
-              class="fake-element"
-            />
+          <div
+            class="slider js-horizontal-slider"
+            style={{ transform: `translate(-${sliderShift}px,0)` }}
+            ref={slider}
+          >
+            {tweets.map((tweet) => (
+              <img {...tweet} alt={tweet.alt} class="slider-element"></img>
+            ))}
           </div>
         </div>
-
         <div class="mobile-desktop-shots">
           <h1 class="medium-text tb-slid-up">More screenshots</h1>
 
@@ -515,7 +491,6 @@ export default function Eyowo() {
             </a>
           </p>
         </div>
-
         <div class="prev-nxt">
           <div class="card">
             <a class="prv cm-sn">
