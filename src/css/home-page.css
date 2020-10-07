@@ -47,10 +47,6 @@ body {
   color: #fff;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 @-webkit-keyframes fill {
   0% {
     width: 20%;
@@ -394,7 +390,7 @@ button {
 
 .projects .project .text_section {
   padding-left: 40px;
-  max-width: 36pc;
+  max-width: 38pc;
 }
 
 @media (max-width: 600px) {
@@ -461,6 +457,8 @@ button {
   display: flex;
   background: #0c2124;
   margin: 0 10px;
+  background-position: center;
+  background-size: cover;
 }
 
 @media (max-width: 600px) {
@@ -490,6 +488,13 @@ button {
       -ms-flex-pack: center;
           justify-content: center;
   line-height: 1;
+}
+
+.site {
+  text-decoration: underline;
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: inherit;
 }
 
 .career-section .cards-container {

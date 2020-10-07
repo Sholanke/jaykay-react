@@ -24,7 +24,7 @@
     }
     .text_section {
       padding-left: 40px;
-      max-width: 36pc;
+      max-width: 38pc;
       @include mobile {
         padding-left: 0;
         transform: translate(0, -42px);
@@ -68,6 +68,8 @@
           display: flex;
           background: #0c2124;
           margin: 0 10px;
+          background-position: center;
+          background-size: cover;
           @include mobile {
             &:nth-child(2) {
               margin-right: 0;
@@ -94,4 +96,12 @@
       }
     }
   }
+}
+
+
+.site {
+  text-decoration: underline;
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: inherit;
 }

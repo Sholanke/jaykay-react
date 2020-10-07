@@ -8,6 +8,7 @@ import MessageJK from "../common/MessageJK";
 import FooterSection from "../common/Footer";
 import notFound from "../assets/img/404.gif";
 import JKLink from "../common/JKLink";
+import Eyowo from "../Eyowo/Eyowo";
 
 export default class Routes extends Component {
   render() {
@@ -47,6 +48,7 @@ const WithRoutes = withRouter(
               exact
               component={() => <AboutPage left={true} />}
             />
+            <Route path="/eyowo" exact component={Eyowo} />
             <Route component={NotFound} />
           </Switch>
           <MessageJK />
