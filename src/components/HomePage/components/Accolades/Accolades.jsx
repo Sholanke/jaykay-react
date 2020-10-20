@@ -21,15 +21,25 @@ const accolades = [
 ];
 
 export default function Accolades() {
-  return (
-    <Tilt className="wrapper accolades_container" data-tilt>
-      <div className="max_width flex_container">
-        {accolades.map((accolade) => (
-          <Accolade {...accolade} />
-        ))}
-        <img src={keyboard} className="keyboard" alt="" srcset="" />
-      </div>
+  return window.innerWidth > 600 ? (
+    <Tilt className="wrapper accolades_container">
+      <FlexContainer />
     </Tilt>
+  ) : (
+    <div className="wrapper accolades_container">
+      <FlexContainer />
+    </div>
+  );
+}
+
+function FlexContainer() {
+  return (
+    <div className="max_width flex_container">
+      {accolades.map((accolade) => (
+        <Accolade {...accolade} />
+      ))}
+      <img src={keyboard} className="keyboard" alt="" srcset="" />
+    </div>
   );
 }
 

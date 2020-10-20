@@ -65,11 +65,11 @@ const Promise = ({ title, desc }) => {
   );
 };
 
-const Achievement = ({ svg, desc }) => {
+const Achievement = ({ svg, title, desc }) => {
   return (
     <div>
       <img src={svg} alt="" srcset="" />
-      <p className="title">Best Designer 2019</p>
+      <p className="title">{title}</p>
       <p>{desc}</p>
     </div>
   );
