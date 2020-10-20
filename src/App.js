@@ -7,12 +7,14 @@ import "./css/404.css";
 
 function App() {
   const [pageHasLoaded, setPageHasLoaded] = useState(false);
+  
   useEffect(() => {
     function showPage() {
       setPageHasLoaded(true);
     }
     window.addEventListener("load", showPage);
   }, []);
+
   return (
     <div className="App">
       <DotsBg />
