@@ -1,0 +1,91 @@
+.accolades_container {
+  margin-bottom: 300px;
+  margin-top: 350px;
+  transform-style: preserve-3d;
+  
+  @include mobile {
+    margin-bottom: 200px;
+    margin-top: 250px;
+  }
+
+  .flex_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    @include mobile {
+      display: block;
+    }
+
+    .keyboard {
+      max-width: 926px;
+      position: absolute;
+      bottom: 0;
+      z-index: -1;
+      @include mobile {
+        display: none;
+      }
+    }
+
+    .accolade {
+      background: #05111c;
+      margin: 32px;
+      padding: 64px 32px 34px 32px;
+      position: relative;
+      max-width: 342px;
+      margin-bottom: 85px;
+      box-shadow: 0px 15px 50px rgba(2, 14, 24, 0.5);
+      border-radius: 8px;
+      transform: translateZ(20px);
+
+      @include mobile {
+        margin: 35px 0;
+      }
+
+      .comment {
+        font-size: 27px;
+        line-height: 1.6;
+        opacity: 0.8;
+        max-width: 342px;
+        margin-bottom: 48px;
+        color: #e8e9eb;
+        @include mobile {
+          font-size: 21px;
+        }
+
+        &::before {
+          content: "";
+          width: 40px;
+          height: 35px;
+          display: block;
+          background: url("../components/assets/svg/quote-2.svg");
+          background-position: center;
+          background-size: cover;
+          margin-bottom: 24px;
+        }
+      }
+      .author {
+        display: flex;
+        align-items: center;
+        &_picture {
+          height: 48px;
+          width: 48px;
+          margin-right: 20px;
+          border-radius: 100vh;
+        }
+        .text_holder {
+          p {
+            font-size: 18px;
+            color: #90a6b8;
+            font-weight: 400;
+          }
+          .name {
+          }
+          .role {
+          }
+        }
+      }
+    }
+  }
+}

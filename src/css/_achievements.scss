@@ -1,0 +1,77 @@
+.achievements_container {
+  .achievements {
+    display: flex;
+    margin-bottom: 200px;
+
+    @include mobile {
+      display: block;
+    }
+
+    > div {
+      margin-right: 137px;
+      max-width: 237px;
+      @include mobile {
+        margin-bottom: 70px;
+        margin-right: 0;
+        max-width: unset;
+      }
+      .title {
+        font-weight: 500;
+        font-family: Oswald;
+        opacity: 1;
+        font-size: 19px;
+      }
+      p {
+        font-size: 16px;
+        margin: 16px 0;
+        color: #e8e9eb;
+        opacity: 0.8;
+        line-height: 1.8;
+      }
+    }
+  }
+  .promise {
+    margin-bottom: 200px;
+    h1 {
+      font-size: 55px;
+      font-weight: 500;
+      font-family: Oswald;
+      max-width: 646px;
+      margin-bottom: 80px;
+      @include mobile {
+        font-size: 35px;
+        margin-right: 0;
+      }
+    }
+    .flex_container {
+      display: flex;
+      @include mobile {
+        display: block;
+      }
+      > div {
+        margin-right: 120px;
+        max-width: 526px;
+        margin-right: 30px;
+        @include mobile {
+          margin-bottom: 70px;
+          margin-right: 0;
+        }
+        .title {
+          font-weight: 500;
+          font-size: 37px;
+          font-family: Oswald;
+          margin: 0 0 32px 0;
+          @include mobile {
+            font-size: 30px;
+          }
+        }
+        p:not(.title) {
+          opacity: 0.8;
+          line-height: 1.98;
+        }
+      }
+    }
+  }
+}
+
+// Death changes nothing. I still miss the sound of your voice. the wisdom of your advice, the stories you shared. I miss you just as much today as I did the day you died. Rest in Peace Kaka.

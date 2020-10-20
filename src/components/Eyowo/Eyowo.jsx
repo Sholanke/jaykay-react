@@ -71,18 +71,18 @@ export default function Eyowo() {
   const slider = useRef();
   const [sliderCount, setsliderCount] = useState(0);
   const [sliderShift, setsliderShift] = useState(0);
-  useEffect(() => {
-    const { current: sliderNode } = slider;
-    const imgNodes = Array.from(sliderNode.querySelectorAll("img"));
 
+  const nextFn = (prev) => {
+    if (prev < tweets.length - 1) {
+      return prev + 1;
+    } else {
+      return 0;
+    }
+  };
+
+  useEffect(() => {
     setInterval(() => {
-      setsliderCount((prev) => {
-        if (prev < imgNodes.length - 1) {
-          return prev + 1;
-        } else {
-          return 0;
-        }
-      });
+      setsliderCount(nextFn);
     }, 6000);
   }, []);
 
@@ -90,6 +90,7 @@ export default function Eyowo() {
   useEffect(() => {
     const { current: sliderNode } = slider;
     const imgNodes = Array.from(sliderNode.querySelectorAll("img"));
+    
     let shift = 0;
     for (let x = 0; x < sliderCount; x++) {
       shift += imgNodes[x].offsetWidth + 30;
@@ -431,7 +432,10 @@ export default function Eyowo() {
           </div>
         </div>
         <div class="section-wrapper slider-container">
-          <button class="mv-btn mv-btn-r js-right">
+          <button
+            class="mv-btn mv-btn-r js-right"
+            onClick={() => setsliderCount(nextFn)}
+          >
             {/* <img src="../assets/navigate_next-24px.svg" alt="" srcset="" /> */}
           </button>
           <div

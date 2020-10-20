@@ -153,14 +153,7 @@ function Project({
             </>
           ))}
         </div>
-        <p>
-          Working closely with a team of stakeholders, product managers,
-          designers and developers, I was responsible for designing the
-          Interface for a pensioners lifestyle planner. The Pensions lifestyle
-          planner helps you start preparing for your tomorrow, today. With
-          carefully selected questions, it predicts an individual’s retirement
-          fund and lifestyle.
-        </p>
+        <p>{description}</p>
         <JKLink to={navLinkToProject}>View Case</JKLink>
       </div>
     </div>
@@ -196,7 +189,7 @@ function AnimateStrips({ strips, index }) {
         className="strip"
         ref={stripTwo}
         style={{
-          transform: `translate(0,${-distanceToMove}px)`,
+          transform: `translate(0,${-distanceToMove * 0.2}px)`,
           backgroundImage: `url(${strips?.[1]})`,
         }}
       >

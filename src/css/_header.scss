@@ -16,6 +16,7 @@
     padding-bottom: 1pc;
     background: $background_color;
     border-bottom: 1px solid #28282836;
+
     &[data-hamBurgerIsOpen="true"] {
       @include mobile {
         padding-top: 4pc;
@@ -23,6 +24,7 @@
       }
     }
   }
+  
   .header-wrapper {
     display: flex;
     justify-content: space-between;
