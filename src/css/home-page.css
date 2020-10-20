@@ -1226,6 +1226,7 @@ footer .txt p {
 @media (max-width: 600px) {
   .accolades_container .flex_container {
     display: block;
+    position: unset;
   }
 }
 
@@ -1259,6 +1260,7 @@ footer .txt p {
 @media (max-width: 600px) {
   .accolades_container .flex_container .accolade {
     margin: 35px 0;
+    position: unset;
   }
 }
 

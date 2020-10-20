@@ -2,7 +2,7 @@
   margin-bottom: 300px;
   margin-top: 350px;
   transform-style: preserve-3d;
-  
+
   @include mobile {
     margin-bottom: 200px;
     margin-top: 250px;
@@ -16,6 +16,7 @@
 
     @include mobile {
       display: block;
+      position: unset;
     }
 
     .keyboard {
@@ -41,6 +42,7 @@
 
       @include mobile {
         margin: 35px 0;
+        position: unset;
       }
 
       .comment {
