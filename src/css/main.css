@@ -921,7 +921,7 @@ footer .txt p {
   width: 100%;
   padding-top: 4pc;
   padding-bottom: 4pc;
-  z-index: 5;
+  z-index: 10;
   left: 0;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
@@ -1249,20 +1249,19 @@ footer .txt p {
   background: #05111c;
   margin: 32px;
   padding: 64px 32px 34px 32px;
-  position: relative;
   max-width: 342px;
   margin-bottom: 85px;
   -webkit-box-shadow: 0px 15px 50px rgba(2, 14, 24, 0.5);
           box-shadow: 0px 15px 50px rgba(2, 14, 24, 0.5);
   border-radius: 8px;
-  -webkit-transform: translateZ(20px);
-          transform: translateZ(20px);
 }
 
 @media (max-width: 600px) {
   .accolades_container .flex_container .accolade {
     margin: 35px 0;
     position: unset;
+    -webkit-transform: unset;
+            transform: unset;
   }
 }
 

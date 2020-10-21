@@ -33,16 +33,16 @@
       background: #05111c;
       margin: 32px;
       padding: 64px 32px 34px 32px;
-      position: relative;
+      //   position: relative;
       max-width: 342px;
       margin-bottom: 85px;
       box-shadow: 0px 15px 50px rgba(2, 14, 24, 0.5);
       border-radius: 8px;
-      transform: translateZ(20px);
 
       @include mobile {
         margin: 35px 0;
         position: unset;
+        transform: unset;
       }
 
       .comment {
