@@ -1168,7 +1168,11 @@ footer .txt p {
 .achievements_container .promise .flex_container > div {
   margin-right: 120px;
   max-width: 526px;
-  margin-right: 30px;
+  margin-right: 120px;
+}
+
+.achievements_container .promise .flex_container > div:last-of-type {
+  margin-right: 0;
 }
 
 @media (max-width: 600px) {
@@ -1194,6 +1198,7 @@ footer .txt p {
 .achievements_container .promise .flex_container > div p:not(.title) {
   opacity: 0.8;
   line-height: 1.98;
+  font-size: 21px;
 }
 
 .accolades_container {
