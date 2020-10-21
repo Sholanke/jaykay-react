@@ -1,4 +1,5 @@
 import React from "react";
+import cv from "../../../assets/docs/cv.pdf"
 
 export default function index() {
   return (
@@ -8,7 +9,7 @@ export default function index() {
           <h2 class="co_theme section-heading">CAREER</h2>
 
           <a
-            href="./assets/Jaykay's CV_Resume.pdf"
+            href={cv}
             target="blank"
             class="co_theme"
           >

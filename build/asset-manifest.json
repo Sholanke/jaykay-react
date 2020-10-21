@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.47e1d3cf.chunk.css",
-    "main.js": "/static/js/main.9fc25cfe.chunk.js",
-    "main.js.map": "/static/js/main.9fc25cfe.chunk.js.map",
+    "main.js": "/static/js/main.ea36dffc.chunk.js",
+    "main.js.map": "/static/js/main.ea36dffc.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.f0a637dc.js",
     "runtime-main.js.map": "/static/js/runtime-main.f0a637dc.js.map",
-    "static/js/2.ed6cbbf6.chunk.js": "/static/js/2.ed6cbbf6.chunk.js",
-    "static/js/2.ed6cbbf6.chunk.js.map": "/static/js/2.ed6cbbf6.chunk.js.map",
+    "static/js/2.f901fbfc.chunk.js": "/static/js/2.f901fbfc.chunk.js",
+    "static/js/2.f901fbfc.chunk.js.map": "/static/js/2.f901fbfc.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.36820d1f15a1a92e892952d31ae82855.js": "/precache-manifest.36820d1f15a1a92e892952d31ae82855.js",
+    "precache-manifest.a379bde174b4cfec090cf96263f16685.js": "/precache-manifest.a379bde174b4cfec090cf96263f16685.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.47e1d3cf.chunk.css.map": "/static/css/main.47e1d3cf.chunk.css.map",
-    "static/js/2.ed6cbbf6.chunk.js.LICENSE.txt": "/static/js/2.ed6cbbf6.chunk.js.LICENSE.txt",
+    "static/js/2.f901fbfc.chunk.js.LICENSE.txt": "/static/js/2.f901fbfc.chunk.js.LICENSE.txt",
     "static/media/404.gif": "/static/media/404.1cb4010b.gif",
     "static/media/home-page.css": "/static/media/quote-2.430ee50f.svg",
     "static/media/arm-strip-2.png": "/static/media/arm-strip-2.58a7da8f.png",
@@ -24,6 +24,7 @@
     "static/media/cl-strip.png": "/static/media/cl-strip.8f030b9f.png",
     "static/media/code-beast.png": "/static/media/code-beast.a0e52aca.png",
     "static/media/code.png": "/static/media/code.6f1c2f9e.png",
+    "static/media/cv.pdf": "/static/media/cv.9d2ab609.pdf",
     "static/media/dribbble.svg": "/static/media/dribbble.bcd8f956.svg",
     "static/media/ey-more-pc-1.png": "/static/media/ey-more-pc-1.3d81b50e.png",
     "static/media/ey-more-pc-2.png": "/static/media/ey-more-pc-2.d807452b.png",
@@ -67,8 +68,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.f0a637dc.js",
-    "static/js/2.ed6cbbf6.chunk.js",
+    "static/js/2.f901fbfc.chunk.js",
     "static/css/main.47e1d3cf.chunk.css",
-    "static/js/main.9fc25cfe.chunk.js"
+    "static/js/main.ea36dffc.chunk.js"
   ]
 }

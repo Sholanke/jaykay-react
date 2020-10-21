@@ -1,9 +1,21 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import JKLink from "../JKLink";
+import { useLocation } from "react-router";
 
-export default function index() {
+export default function Index() {
+  const location = useLocation();
+  const componentRef = useRef();
+
+  useEffect(() => {
+    if (location.hash === "#contacts") {
+      componentRef.current.scrollIntoView({
+        // behavior: "smooth",
+      });
+    }
+  }, [location]);
+
   return (
-    <div className="wrapper" id="contacts">
+    <div className="wrapper" id="contacts" ref={componentRef}>
       <section class="next-section max_width" id="contact-jaykay">
         <div class="left-txt">
           <p class="marker-container">

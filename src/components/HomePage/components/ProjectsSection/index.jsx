@@ -14,6 +14,7 @@ import clStrip2 from "../../../assets/img/cl-strip-2.png";
 
 import lcStrip from "../../../assets/img/lc-strip.png";
 import lcStrip2 from "../../../assets/img/lc-strip-2.png";
+import { useLocation } from "react-router";
 
 const projects = [
   {
@@ -106,9 +107,24 @@ const projects = [
   },
 ];
 
-export default function index() {
+export default function Index() {
+  const location = useLocation();
+  const projectsRef = useRef();
+
+  useEffect(() => {
+    if (location.hash === "#projects") {
+      projectsRef.current.scrollIntoView({
+        // behavior: "smooth",
+      });
+    }
+  }, [location]);
+
   return (
-    <section className="projects-section wrapper" id="jk-projects">
+    <section
+      className="projects-section wrapper"
+      id="projects"
+      ref={projectsRef}
+    >
       <div className="max_width">
         <h2 className="co_theme section-heading  ">PROJECTS</h2>
         <div className="projects">

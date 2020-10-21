@@ -1,10 +1,10 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { AnimatedHeading, AnimatedWord } from "../../../common/MessageJK";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link, useLocation } from "react-router-dom";
 import hand from "../../../assets/img/hand.png";
 import jaykay from "../../../assets/img/jk.png";
 
-export default function index() {
+export default function Index() {
   return (
     <div className="wrapper hero_section_container">
       <div className="max_width">
@@ -32,9 +32,15 @@ export default function index() {
                   about me
                 </NavLink>{" "}
                 or jump straight to{" "}
-                <a href="#jk-projects" class="co_theme">
+                <Link
+                  to={{
+                    pathname: "/",
+                    hash: "#projects",
+                  }}
+                  class="co_theme"
+                >
                   my work
-                </a>
+                </Link>
                 .
               </p>
               <p class="scroll-indict">SCROLL FOR MORE</p>

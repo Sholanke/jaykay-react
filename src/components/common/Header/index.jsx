@@ -44,11 +44,14 @@ export default function Header({ useHamBurgerIsActive }) {
                 {text}
               </NavLink>
             ))}
-            <Link to="/" style={{ transitionDelay: `${links.length * 0.1}s` }}>
+            <Link
+              to={{ pathname: "/", hash: "#projects" }}
+              style={{ transitionDelay: `${links.length * 0.1}s` }}
+            >
               Projects
             </Link>
             <Link
-              to="/"
+              to={{ pathname: "/", hash: "#contacts" }}
               style={{ transitionDelay: `${(links.length + 1) * 0.1}s` }}
             >
               Contacts
