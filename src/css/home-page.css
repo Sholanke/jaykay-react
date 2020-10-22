@@ -1315,6 +1315,101 @@ footer .txt p {
   font-weight: 400;
 }
 
+.page_loader {
+  background: #020e18;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 98vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: 10;
+}
+
+.page_loader svg {
+  height: 8pc;
+  width: 22pc;
+}
+
+.page_loader path {
+  stroke: white;
+  stroke-width: 0.5px;
+  fill: transparent;
+  /* stroke-dashoffset: 1000px;
+    stroke-dasharray: 1000px; */
+  -webkit-animation-name: draw;
+          animation-name: draw;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.page_loader .fillDraw {
+  -webkit-animation-name: FillDraw;
+          animation-name: FillDraw;
+}
+
+@-webkit-keyframes draw {
+  50% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    /* stroke-dashoffset: 0;
+      stroke-width: 0; */
+    /* fill: #fff; */
+  }
+}
+
+@keyframes draw {
+  50% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    /* stroke-dashoffset: 0;
+      stroke-width: 0; */
+    /* fill: #fff; */
+  }
+}
+
+@-webkit-keyframes FillDraw {
+  50% {
+    stroke-dashoffset: 0;
+    fill: #fff;
+  }
+  100% {
+    /* stroke-dashoffset: 0;
+      stroke-width: 0; */
+    /* fill: #fff; */
+  }
+}
+
+@keyframes FillDraw {
+  50% {
+    stroke-dashoffset: 0;
+    fill: #fff;
+  }
+  100% {
+    /* stroke-dashoffset: 0;
+      stroke-width: 0; */
+    /* fill: #fff; */
+  }
+}
+
 .hero_section_container {
   min-height: 100vh;
 }

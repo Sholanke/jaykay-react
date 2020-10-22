@@ -1,0 +1,58 @@
+.page_loader {
+  background: #020e18;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 98vh;
+  box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: 10;
+//   background: red;
+
+  svg {
+    height: 8pc;
+    width: 22pc;
+  }
+  path {
+    stroke: white;
+    stroke-width: 0.5px;
+    fill: transparent;
+    /* stroke-dashoffset: 1000px;
+    stroke-dasharray: 1000px; */
+
+    animation-name: draw;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+  }
+  .fillDraw {
+    animation-name: FillDraw;
+  }
+}
+
+@keyframes draw {
+  50% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    /* stroke-dashoffset: 0;
+      stroke-width: 0; */
+    /* fill: #fff; */
+  }
+}
+
+@keyframes FillDraw {
+  50% {
+    stroke-dashoffset: 0;
+    fill: #fff;
+  }
+  100% {
+    /* stroke-dashoffset: 0;
+      stroke-width: 0; */
+    /* fill: #fff; */
+  }
+}

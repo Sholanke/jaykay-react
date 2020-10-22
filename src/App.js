@@ -4,10 +4,11 @@ import Routes from "./components/Routes/Routes";
 import "./css/home-page.css";
 import "./css/about-page.css";
 import "./css/404.css";
+import Loader from "./components/Loader";
 
 function App() {
   const [pageHasLoaded, setPageHasLoaded] = useState(false);
-  
+
   useEffect(() => {
     function showPage() {
       setPageHasLoaded(true);
@@ -24,6 +25,7 @@ function App() {
       >
         <Routes />
       </div>
+      {!pageHasLoaded && <Loader />}
     </div>
   );
 }

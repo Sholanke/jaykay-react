@@ -61,6 +61,8 @@ const projects = [
       },
     ],
     description: `Working closely with a team of stakeholders, product managers, designers and developers, I was responsible for designing the Interface for a pensioners lifestyle planner. The Pensions lifestyle planner helps you start preparing for your tomorrow, today. With carefully selected questions, it predicts an individual’s retirement fund and lifestyle.`,
+    navLinkToProject: "/arm",
+
   },
   {
     strips: [clStrip, clStrip2],
