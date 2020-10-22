@@ -12,6 +12,7 @@
       padding: 35px 36px;
       width: 100%;
       border-radius: 10px;
+      height: fit-content;
       @include mobile {
         width: unset;
         padding: 20px 15px;
@@ -41,7 +42,7 @@
           position: relative;
           padding-bottom: 0;
           &:after {
-            content: unset;
+            content: "";
             position: absolute;
             top: 14px;
             left: 7px;
@@ -76,11 +77,13 @@
           }
         }
       }
-      .work-space:first-of-type {
+      .work-space:last-of-type {
         .work-space-info {
           padding-bottom: 30px;
+          margin-bottom: 0;
+
           &:after {
-            content: "";
+            content: unset;
           }
         }
       }

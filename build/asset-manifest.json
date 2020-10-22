@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.f9040ab2.chunk.css",
-    "main.js": "/static/js/main.7b6c263f.chunk.js",
-    "main.js.map": "/static/js/main.7b6c263f.chunk.js.map",
+    "main.css": "/static/css/main.41cacce9.chunk.css",
+    "main.js": "/static/js/main.2620d182.chunk.js",
+    "main.js.map": "/static/js/main.2620d182.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.f0a637dc.js",
     "runtime-main.js.map": "/static/js/runtime-main.f0a637dc.js.map",
     "static/js/2.9d13046a.chunk.js": "/static/js/2.9d13046a.chunk.js",
     "static/js/2.9d13046a.chunk.js.map": "/static/js/2.9d13046a.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.ac6545b4842c968394398dee7744678a.js": "/precache-manifest.ac6545b4842c968394398dee7744678a.js",
+    "precache-manifest.3fca72f665dc3212b4f2f0b1564f405e.js": "/precache-manifest.3fca72f665dc3212b4f2f0b1564f405e.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.f9040ab2.chunk.css.map": "/static/css/main.f9040ab2.chunk.css.map",
+    "static/css/main.41cacce9.chunk.css.map": "/static/css/main.41cacce9.chunk.css.map",
     "static/js/2.9d13046a.chunk.js.LICENSE.txt": "/static/js/2.9d13046a.chunk.js.LICENSE.txt",
     "static/media/404.gif": "/static/media/404.1cb4010b.gif",
     "static/media/home-page.css": "/static/media/quote-2.430ee50f.svg",
@@ -18,13 +18,13 @@
     "static/media/arm-strip.png": "/static/media/arm-strip.4a66c652.png",
     "static/media/arm_tn.png": "/static/media/arm_tn.f61b5d7a.png",
     "static/media/behance.svg": "/static/media/behance.1c230ca9.svg",
-    "static/media/brand.jpg": "/static/media/brand.2ac92131.jpg",
+    "static/media/brand.png": "/static/media/brand.aade46e2.png",
     "static/media/charles.png": "/static/media/charles.2189a441.png",
     "static/media/cl-strip-2.png": "/static/media/cl-strip-2.7b69f078.png",
     "static/media/cl-strip.png": "/static/media/cl-strip.8f030b9f.png",
     "static/media/cloud_tn.png": "/static/media/cloud_tn.82357b71.png",
     "static/media/code-beast.png": "/static/media/code-beast.a0e52aca.png",
-    "static/media/code.png": "/static/media/code.6f1c2f9e.png",
+    "static/media/code.png": "/static/media/code.70f47e76.png",
     "static/media/cv.pdf": "/static/media/cv.9d2ab609.pdf",
     "static/media/eyowo.css": "/static/media/doubleDots.5b8b3739.svg",
     "static/media/dribbble.svg": "/static/media/dribbble.bcd8f956.svg",
@@ -55,7 +55,7 @@
     "static/media/lc-strip.png": "/static/media/lc-strip.9452e00c.png",
     "static/media/linkedIn.svg": "/static/media/linkedIn.f8babde6.svg",
     "static/media/liteCrowd_tn.png": "/static/media/liteCrowd_tn.891d4ad7.png",
-    "static/media/product-design.png": "/static/media/product-design.b9cd3257.png",
+    "static/media/product-design.png": "/static/media/product-design.603b6a85.png",
     "static/media/quote.svg": "/static/media/quote.f0771551.svg",
     "static/media/trophy.svg": "/static/media/trophy.12ef07a8.svg",
     "static/media/tweet-1.png": "/static/media/tweet-1.b4716274.png",
@@ -67,12 +67,12 @@
     "static/media/tweet-primary-1.png": "/static/media/tweet-primary-1.8545d354.png",
     "static/media/tweet-primary-2.png": "/static/media/tweet-primary-2.883e15e3.png",
     "static/media/twitter.svg": "/static/media/twitter.984bc3fe.svg",
-    "static/media/visual-design.png": "/static/media/visual-design.fdd7b999.png"
+    "static/media/visual-design.png": "/static/media/visual-design.2cac6072.png"
   },
   "entrypoints": [
     "static/js/runtime-main.f0a637dc.js",
     "static/js/2.9d13046a.chunk.js",
-    "static/css/main.f9040ab2.chunk.css",
-    "static/js/main.7b6c263f.chunk.js"
+    "static/css/main.41cacce9.chunk.css",
+    "static/js/main.2620d182.chunk.js"
   ]
 }

@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import productDesign from "../../../assets/img/product-design.png";
 import code from "../../../assets/img/code.png";
-import brand from "../../../assets/img/brand.jpg";
+import brand from "../../../assets/img/brand.png";
 import visualDesign from "../../../assets/img/visual-design.png";
 
 const skills = [
