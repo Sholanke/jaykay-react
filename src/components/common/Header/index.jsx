@@ -54,7 +54,7 @@ export default function Header({ useHamBurgerIsActive }) {
               to={{ pathname: "/", hash: "#contacts" }}
               style={{ transitionDelay: `${(links.length + 1) * 0.1}s` }}
             >
-              Contacts
+              Contact Me
             </Link>
           </div>
           <button onClick={() => setHamBurgerIsOpen(!hamBurgerIsOpen)}>
