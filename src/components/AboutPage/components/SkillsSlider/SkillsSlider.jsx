@@ -15,14 +15,14 @@ const skills = [
     title: "Visual Design",
     image: visualDesign,
     desc:
-      "As a brand designer, I work with the client to understand what image or mood they want to project and come up with designs to create a brand identity for their business.",
+      "As a visual designer, I aim to shape and improve the user experience through considering the effects of illustrations, photography, typography, space, layouts, and color on the usability of products and on their aesthetic appeal.",
   },
   {
     title: "Brand Design",
     image: brand,
 
     desc:
-      "As a visual designer, I aim to shape and improve the user experience through considering the effects of illustrations, photography, typography, space, layouts, and color on the usability of products and on their aesthetic appeal.",
+      "As a brand designer, I work with the client to understand what image or mood they want to project and come up with designs to create a brand identity for their business.",
   },
   {
     title: "Frontend Development",
