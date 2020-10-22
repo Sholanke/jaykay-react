@@ -23,7 +23,7 @@ export default function index() {
           </a>
         </div>
         <div class="txt">
-          <p>Designed by Jaykay - Developed by Olamide ( Human pen tool )</p>
+          <p>Designed by Jaykay - Developed by Olamide ( Super Star Cousin )</p>
         </div>
       </div>
     </footer>

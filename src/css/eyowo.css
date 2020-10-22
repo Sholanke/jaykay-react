@@ -1339,6 +1339,10 @@ button {
   width: auto;
 }
 
+.eyowo-wrapper {
+  overflow: hidden;
+}
+
 .slider-container {
   position: relative;
 }
@@ -1631,6 +1635,7 @@ button {
       flex-shrink: 0;
   display: block;
   margin-right: 16px;
+  background-image: url("../components/assets/svg/doubleDots.svg");
 }
 
 @-webkit-keyframes floatNscale {

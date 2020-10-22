@@ -1,7 +1,5 @@
 @import "./common";
 
-
-
 .medium-text {
   font-size: 200%;
   line-height: 1.5;
@@ -636,8 +634,12 @@ $prjTheme: #c9874a;
     // filter: grayscale(1);
   }
 }
+.eyowo-wrapper {
+  overflow: hidden;
+}
 .slider-container {
   position: relative;
+
   .mv-btn {
     height: 50px;
     width: 50px;
@@ -844,7 +846,7 @@ $prjTheme: #c9874a;
       flex-shrink: 0;
       display: block;
       margin-right: 16px;
-      // background-image: url("../assets/point.svg");
+      background-image: url("../components/assets/svg/doubleDots.svg");
     }
   }
 }

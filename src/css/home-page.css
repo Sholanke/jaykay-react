@@ -664,8 +664,6 @@ footer .container {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding-right: 40px;
-    padding-left: 40px;
   }
 }
 
@@ -1265,6 +1263,7 @@ footer .txt p {
     position: unset;
     -webkit-transform: unset;
             transform: unset;
+    max-width: unset;
   }
 }
 

@@ -39,6 +39,7 @@ import liteCrowd from "../assets/img/liteCrowd_tn.png";
 import arm from "../assets/img/arm_tn.png";
 import { useRef } from "react";
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 const tweets = [
   {
@@ -99,7 +100,7 @@ export default function Eyowo() {
   }, [sliderCount]);
 
   return (
-    <div class="wrapper">
+    <div class="wrapper eyowo-wrapper">
       <div class="max_width" id="main">
         <div class="project-heading-container">
           <div class="project-info">
@@ -502,12 +503,12 @@ export default function Eyowo() {
                 <img src={liteCrowd} alt="" srcset="" />
               </span>
             </a>
-            <a class="nxt js-page-link">
+            <NavLink to="/arm" class="nxt js-page-link">
               <p class="r-align tb-slid-up">NEXT</p>
               <span class="img-rapper tb-slid-up">
                 <img src={arm} alt="" />
               </span>
-            </a>
+            </NavLink>
           </div>
         </div>
       </div>
