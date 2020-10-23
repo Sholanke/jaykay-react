@@ -9,11 +9,12 @@ import strip2 from "../../../assets/img/ey-strip-2.png";
 import lifestyleStrip from "../../../assets/img/arm-strip.png";
 import lifestyleStrip2 from "../../../assets/img/arm-strip-2.png";
 
+import rzvStrip from "../../../assets/img/rzv-strip.png";
+import rzvStrip2 from "../../../assets/img/rzv-strip-2.png";
+
 import clStrip from "../../../assets/img/cl-strip.png";
 import clStrip2 from "../../../assets/img/cl-strip-2.png";
 
-import lcStrip from "../../../assets/img/lc-strip.png";
-import lcStrip2 from "../../../assets/img/lc-strip-2.png";
 import { useLocation } from "react-router";
 
 const projects = [
@@ -62,7 +63,6 @@ const projects = [
     ],
     description: `Working closely with a team of stakeholders, product managers, designers and developers, I was responsible for designing the Interface for a pensioners lifestyle planner. The Pensions lifestyle planner helps you start preparing for your tomorrow, today. With carefully selected questions, it predicts an individual’s retirement fund and lifestyle.`,
     navLinkToProject: "/arm",
-
   },
   {
     strips: [clStrip, clStrip2],
@@ -86,26 +86,34 @@ const projects = [
       "I was reponsible for designing a mobile (VueJS) app enabling capture of short videos and uploading them to Cloudinary for auto-tagging. I also designed a moderation app that allows reviewing of these short (8-sec) videos and assigning them to playlist queues, yet another app is replaying the video playlists on a browser (which will be projected on a big projector screen).",
   },
   {
-    strips: [lcStrip, lcStrip2],
+    strips: [rzvStrip, rzvStrip2],
     heading: [
-      "LITECROWD",
+      "Rizevo",
       <>
         <br />
-        Brands and Influencers
+        Appointment Booking
       </>,
     ],
     keys: [
       {
         key: "Year",
-        value: "2018",
+        value: "2020",
       },
       {
         key: "Type",
-        value: "Markerting",
+        value: "Booking",
+      },
+      {
+        key: "Website",
+        value: (
+          <a href="https://www.rizevo.com/" target="blank" class="site">
+            www.rizevo.com
+          </a>
+        ),
       },
     ],
     description:
-      "Working closely with Neon ventures, we created an all-in-one solution for brands and influencers. Litecrowd provides a platform that equips every person seeking to utilize influencer marketing and content creation to promote their brand and ultimately make sales. I designed new landing page, discovery tool dashboard, as well as the influencers and brand dashboards.",
+      "Working closely with the client, we created an all-in-one solution for customers and business owners to book and manage appointments.I was responsible for designing the  UX for the business owner and customer’s platform. This was done with the mobile first approach in mind  which made it easier scaling to bigger screens.",
   },
 ];
 
@@ -201,17 +209,31 @@ function AnimateStrips({ strips, index }) {
           backgroundImage: `url(${strips?.[0]})`,
         }}
       >
-        <p className="number">0</p>
+        <p
+          className="number"
+          style={{
+            transform: `translate(0,${distanceToMove * 0.8}px)`,
+          }}
+        >
+          0
+        </p>
       </div>
       <div
         className="strip"
         ref={stripTwo}
         style={{
-          transform: `translate(0,${-distanceToMove * 0.2}px)`,
+          transform: `translate(0,${-distanceToMove}px)`,
           backgroundImage: `url(${strips?.[1]})`,
         }}
       >
-        <p className="number">{index + 1}</p>
+        <p
+          className="number"
+          style={{
+            transform: `translate(0,${-distanceToMove * 0.8}px)`,
+          }}
+        >
+          {index + 1}
+        </p>
       </div>
     </div>
   );

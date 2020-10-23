@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.41cacce9.chunk.css",
-    "main.js": "/static/js/main.0e511a37.chunk.js",
-    "main.js.map": "/static/js/main.0e511a37.chunk.js.map",
+    "main.js": "/static/js/main.ebf7c4c2.chunk.js",
+    "main.js.map": "/static/js/main.ebf7c4c2.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.f0a637dc.js",
     "runtime-main.js.map": "/static/js/runtime-main.f0a637dc.js.map",
     "static/js/2.9d13046a.chunk.js": "/static/js/2.9d13046a.chunk.js",
     "static/js/2.9d13046a.chunk.js.map": "/static/js/2.9d13046a.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.c063c434a69a479db8259aada2e443eb.js": "/precache-manifest.c063c434a69a479db8259aada2e443eb.js",
+    "precache-manifest.dce282b8cf15a332a041044b8e819600.js": "/precache-manifest.dce282b8cf15a332a041044b8e819600.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.41cacce9.chunk.css.map": "/static/css/main.41cacce9.chunk.css.map",
     "static/js/2.9d13046a.chunk.js.LICENSE.txt": "/static/js/2.9d13046a.chunk.js.LICENSE.txt",
@@ -51,12 +51,12 @@
     "static/media/hand.png": "/static/media/hand.62633a12.png",
     "static/media/jk.png": "/static/media/jk.2bfd4e31.png",
     "static/media/keyboard.png": "/static/media/keyboard.f8b26a2c.png",
-    "static/media/lc-strip-2.png": "/static/media/lc-strip-2.5695381e.png",
-    "static/media/lc-strip.png": "/static/media/lc-strip.9452e00c.png",
     "static/media/linkedIn.svg": "/static/media/linkedIn.f8babde6.svg",
     "static/media/liteCrowd_tn.png": "/static/media/liteCrowd_tn.891d4ad7.png",
     "static/media/product-design.png": "/static/media/product-design.603b6a85.png",
     "static/media/quote.svg": "/static/media/quote.f0771551.svg",
+    "static/media/rzv-strip-2.png": "/static/media/rzv-strip-2.0a65742e.png",
+    "static/media/rzv-strip.png": "/static/media/rzv-strip.fc030cbc.png",
     "static/media/trophy.svg": "/static/media/trophy.12ef07a8.svg",
     "static/media/tweet-1.png": "/static/media/tweet-1.b4716274.png",
     "static/media/tweet-2.png": "/static/media/tweet-2.dfaa6b8c.png",
@@ -73,6 +73,6 @@
     "static/js/runtime-main.f0a637dc.js",
     "static/js/2.9d13046a.chunk.js",
     "static/css/main.41cacce9.chunk.css",
-    "static/js/main.0e511a37.chunk.js"
+    "static/js/main.ebf7c4c2.chunk.js"
   ]
 }
