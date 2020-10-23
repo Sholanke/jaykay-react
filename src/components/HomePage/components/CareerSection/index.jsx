@@ -18,12 +18,12 @@ export default function index() {
               {
                 company: "Hotels.ng",
                 role: "UI Designer",
-                time: "Lagos | Nigeria Feb 2017 - May 2017 ",
+                time: "Lagos | Nigeria, Feb 2017 - May 2017 ",
               },
               {
                 company: "Softcom.ng",
                 role: "Product Designer",
-                time: "Lagos | Nigeria Mar 2018 - Jan 2020",
+                time: "Lagos | Nigeria, Mar 2018 - Jan 2020",
               },
             ]}
           />
@@ -33,7 +33,7 @@ export default function index() {
               {
                 company: "Tangerine Life",
                 role: "Product Designer",
-                time: "Lagos | Nigeria Jan 2020 - present ",
+                time: "Lagos | Nigeria, Jan 2020 - present ",
               },
             ]}
           />
