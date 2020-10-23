@@ -33,7 +33,7 @@ export default function index() {
               {
                 company: "Tangerine Life",
                 role: "Product Designer",
-                time: "Lagos | Nigeria, Jan 2020 - present ",
+                time: "Lagos | Nigeria, Jan 2020 - Present ",
               },
             ]}
           />
