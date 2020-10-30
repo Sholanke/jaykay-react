@@ -180,7 +180,12 @@ function Project({
           ))}
         </div>
         <p>{description}</p>
-        <JKLink to={navLinkToProject}>View Case</JKLink>
+        <JKLink
+          to={navLinkToProject}
+          data-coming-soon={!navLinkToProject ? "true" : "false"}
+        >
+          View Case
+        </JKLink>
       </div>
     </div>
   );

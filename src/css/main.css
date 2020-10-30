@@ -118,13 +118,70 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 82%;
   text-transform: uppercase;
 }
 
 .special-link .arrw {
   margin: 0 0 0 6px;
   height: 30px;
+}
+
+.special-link .tag {
+  display: none;
+}
+
+.special-link[data-coming-soon="true"] {
+  position: relative;
+}
+
+.special-link[data-coming-soon="true"]:hover .tag {
+  opacity: 1;
+}
+
+.special-link[data-coming-soon="true"] .tag {
+  display: block;
+  opacity: 0;
+  position: absolute;
+  pointer-events: none;
+  bottom: 0;
+  left: 0;
+  -webkit-transform: translate(0, -100%);
+          transform: translate(0, -100%);
+  -webkit-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
+}
+
+.special-link[data-coming-soon="true"] .tag:after, .special-link[data-coming-soon="true"] .tag:before {
+  content: "Coming soon";
+  font-size: 70%;
+  background: #051a2c;
+  -webkit-box-shadow: 0 0 200px 10px rgba(0, 0, 0, 0.493);
+          box-shadow: 0 0 200px 10px rgba(0, 0, 0, 0.493);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  -webkit-transform: translate(0, calc(100% + 20px));
+          transform: translate(0, calc(100% + 20px));
+  padding: 10px 20px;
+  white-space: nowrap;
+  font-size: 80%;
+  border-radius: 6px;
+  color: #66bd90;
+}
+
+.special-link[data-coming-soon="true"] .tag:before {
+  content: "";
+  -webkit-transform: translate(0px, calc(100% + 5px));
+          transform: translate(0px, calc(100% + 5px));
+  -webkit-clip-path: polygon(50% 0, 100% 100%, 0 100%);
+          clip-path: polygon(50% 0, 100% 100%, 0 100%);
+  height: 20px;
+  width: 35px;
+  white-space: nowrap;
 }
 
 .special-link:hover:before {
