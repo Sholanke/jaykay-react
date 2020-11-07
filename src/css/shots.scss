@@ -1,0 +1,16 @@
+@import "./common";
+
+.shots {
+  .max_width {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 100px;
+  }
+
+  .shot {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 10px;
+  }
+}

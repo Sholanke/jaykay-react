@@ -56,6 +56,12 @@ export default function Header({ useHamBurgerIsActive }) {
             >
               Contact Me
             </Link>
+            <NavLink
+              to={{ pathname: "/shots" }}
+              style={{ transitionDelay: `${(links.length + 2) * 0.1}s` }}
+            >
+              More Designs
+            </NavLink>
           </div>
           <button onClick={() => setHamBurgerIsOpen(!hamBurgerIsOpen)}>
             <HamBuger active={hamBurgerIsOpen} />

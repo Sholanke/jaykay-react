@@ -4,6 +4,7 @@ import Routes from "./components/Routes/Routes";
 import "./css/home-page.css";
 import "./css/about-page.css";
 import "./css/404.css";
+import "./css/shots.css";
 import Loader from "./components/Loader";
 
 function App() {
