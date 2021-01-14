@@ -5,12 +5,12 @@
   top: 0;
   width: 100%;
   padding-top: 4pc;
-  padding-bottom: 4pc;
+  padding-bottom: 8pc;
   z-index: 10;
   left: 0;
   transition: 0.5s ease;
   border-bottom: 1px solid #28282800;
-
+  
   &.shrink {
     padding-top: 1pc;
     padding-bottom: 1pc;

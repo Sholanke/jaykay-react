@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useScrollContext } from "../../../context/scrollContext ";
 import JK from "../JKLogo/JK";
 import { NavLink, Link } from "react-router-dom";
+
 const links = [
   {
     to: "/",
