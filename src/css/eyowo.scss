@@ -62,13 +62,21 @@
 }
 .project-dp-rapper {
   margin: 100px 0;
+  // overflow: hidden;
+  // width: 100%;
+  background: red;
 
   &.small {
     margin-top: 0;
   }
   &.wide {
-    margin-right: calc(-1 * (50vw - 50%));
-    margin-left: calc(-1 * (50vw - 50%));
+    margin-right: calc(-1 * ((100vw - 78pc) / 2));
+    margin-left: calc(-1 * ((100vw - 77pc) / 2));
+    @include mobile {
+      margin-right: -25px;
+      margin-left: -25px;
+    }
+
     .project-dp {
       border-radius: 0;
     }

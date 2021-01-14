@@ -482,6 +482,7 @@ button {
 
 .project-dp-rapper {
   margin: 100px 0;
+  background: red;
 }
 
 .project-dp-rapper.small {
@@ -489,8 +490,15 @@ button {
 }
 
 .project-dp-rapper.wide {
-  margin-right: calc(-1 * (50vw - 50%));
-  margin-left: calc(-1 * (50vw - 50%));
+  margin-right: calc(-1 * ((100vw - 78pc) / 2));
+  margin-left: calc(-1 * ((100vw - 77pc) / 2));
+}
+
+@media (max-width: 600px) {
+  .project-dp-rapper.wide {
+    margin-right: -25px;
+    margin-left: -25px;
+  }
 }
 
 .project-dp-rapper.wide .project-dp {
